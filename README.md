@@ -11,7 +11,8 @@ Once published, anyone can read everything in this folder, including your graph 
 Unzip this project with your system's own Extract command: some command-line tools garble names with accents.
 
 1. Create a new, empty repository on GitHub. Make it public: Pages on a private repository needs a paid plan.
-2. In the repository, open Settings → Pages, and under "Build and deployment" set Source to **GitHub Actions**.
+2. Before you push, in the repository, open Settings → Pages, and under "Build and deployment" set Source to
+   **GitHub Actions**. The push starts the deploy, and without this its first run fails.
    GitHub then suggests some workflows. You do not need them: this project brings its own.
 3. Open a terminal in the folder that holds this README.md, which becomes the root of the repository. Replace
    `<you>` and `<repo>` with your user name and the repository's name, and run:
